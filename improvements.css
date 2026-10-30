@@ -1,0 +1,18 @@
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:absolute;top:8px;left:8px;z-index:20;padding:12px;background:#080d20;transform:translateY(-160%)}
+.skip-link:focus{transform:translateY(0)}
+:focus-visible{outline:2px solid #b4d4ff;outline-offset:5px}
+.nav{top:14px;right:14px}
+.menu-btn{min-height:44px;min-width:132px;background:#030611;border:1px solid #6379b6}
+.menu a{min-height:44px}
+.load-video{padding:15px 12px;border:1px solid #8ba4dd;background:#07112b;line-height:1.6;letter-spacing:.1em}
+.watch{padding:12px 4px;line-height:1.7}
+.video-card{display:flex;flex-direction:column}
+.video-card .watch{margin-top:auto}
+.video-card .short-preview{flex-shrink:0}
+.video-card h3{line-height:1.6}
+.aw-vote p{letter-spacing:.04em}
+footer a{text-decoration:underline}
+@media(max-width:650px){.nav{top:8px;right:8px}.menu-btn{min-width:122px;font-size:11px}.section h2{letter-spacing:.15em}.aw-title{letter-spacing:.06em}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}

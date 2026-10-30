@@ -1,0 +1,24 @@
+[
+  {
+    "id": "deadman-moumoku",
+    "title": "盲目の羽根と星を手に",
+    "artist": "deadman",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7702079198554410260"
+  },
+  {
+    "id": "gazette-pledge",
+    "title": "PLEDGE",
+    "artist": "the GazettE",
+    "category": "cover",
+    "url": "https://vt.tiktok.com/ZSgW9UyYr/"
+  },
+  {
+    "id": "ai-no-hana",
+    "title": "哀の花 / Ai no Hana",
+    "artist": "殉 -jun",
+    "category": "original",
+    "audio": "ai-no-hana-preview.mp3",
+    "aiVocal": true
+  }
+]
