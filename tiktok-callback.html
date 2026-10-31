@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex"><title>TikTok認証の戻り先 | 殉 -jun</title><style>body{max-width:650px;margin:60px auto;padding:0 24px;background:#03040a;color:#dce5ff;font:16px/1.8 system-ui}textarea{box-sizing:border-box;width:100%;min-height:120px;background:#101b37;color:#fff;border:1px solid #7c9fdc;padding:14px}a{color:#b5d0ff}[hidden]{display:none!important}</style></head><body><h1>TikTok認証</h1><p id="status" role="status">認証結果を確認しています。</p><section id="result" hidden><p>認証コードを取得しました。連携はまだ完了していません。この一時コードを、運営者用のサーバー設定でアクセストークンへ交換する必要があります。</p><label for="code">一時認証コード（公開・共有しないでください）</label><textarea id="code" readonly spellcheck="false"></textarea><p>このページはコードを外部送信・永続保存しません。ページを閉じると表示を失います。期限切れの場合は認証をやり直してください。</p></section><p><a href="tiktok-connect.html">接続準備へ</a> · <a href="index.html">Music Archiveへ</a></p><script>
+'use strict';
+(()=>{
+ const params=new URLSearchParams(location.search); history.replaceState(null,'',location.pathname);
+ const status=document.getElementById('status');
+ let pending;
+ try{pending=JSON.parse(sessionStorage.getItem('jun-tiktok-oauth')||'null');sessionStorage.removeItem('jun-tiktok-oauth');}catch{}
+ if(!params.has('code')&&!params.has('error')){status.textContent='ここはTikTok認証後の戻り先です。接続準備画面から開始してください。';return;}
+ if(!pending||typeof pending.created!=='number'||Date.now()-pending.created>600000||Date.now()<pending.created||params.get('state')!==pending.state){status.textContent='認証の開始情報と一致しないか、10分以上経過しました。同じブラウザー・同じタブで接続準備からやり直してください。';return;}
+ if(params.has('error')){status.textContent='TikTokとの接続は許可されませんでした。必要な場合はやり直してください。';return;}
+ const code=params.get('code');
+ if(!code||code.length>4096){status.textContent='認証コードを確認できませんでした。';return;}
+ status.textContent='認証結果を確認しました。サーバー側の設定が必要です。';
+ document.getElementById('code').value=code;document.getElementById('result').hidden=false;
+})();
+</script></body></html>
