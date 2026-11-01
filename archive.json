@@ -1,22 +1,192 @@
 [
   {
-    "id": "deadman-moumoku",
+    "id": "gomenne-itoshii-hito",
+    "title": "ごめんね愛しい人",
+    "artist": "殉-jun",
+    "category": "original",
+    "vocal": "human",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7699676070848630037"
+  },
+  {
+    "id": "shabon-no-iro",
+    "title": "しゃぼんの色",
+    "artist": "殉-jun",
+    "category": "original",
+    "vocal": "human",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7700912021839023380"
+  },
+  {
+    "id": "7702956922655214869",
+    "title": "ゆらめき (Yurameki)",
+    "artist": "DIR EN GREY",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7702956922655214869"
+  },
+  {
+    "id": "7702608108157242645",
+    "title": "blood",
+    "artist": "deadman",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7702608108157242645"
+  },
+  {
+    "id": "7702237162464382229",
+    "title": "PLEDGE",
+    "artist": "the GazettE",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7702237162464382229"
+  },
+  {
+    "id": "7702079198554410260",
     "title": "盲目の羽根と星を手に",
     "artist": "deadman",
     "category": "cover",
     "url": "https://www.tiktok.com/@jun_rebirth_project/video/7702079198554410260"
   },
   {
-    "id": "gazette-pledge",
-    "title": "PLEDGE",
+    "id": "7701704132511419668",
+    "title": "Cage",
+    "artist": "DIR EN GREY",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7701704132511419668"
+  },
+  {
+    "id": "7701318846275603733",
+    "title": "ADORE · Slow Acoustic",
+    "artist": "lynch.",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7701318846275603733"
+  },
+  {
+    "id": "7700987700857392404",
+    "title": "ドリスからの手紙",
+    "artist": "deadman",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7700987700857392404"
+  },
+  {
+    "id": "7700551031087713557",
+    "title": "ヴァンパイア (Vampire)",
+    "artist": "Janne Da Arc",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7700551031087713557"
+  },
+  {
+    "id": "7700393698940472597",
+    "title": "Cassis",
     "artist": "the GazettE",
     "category": "cover",
-    "url": "https://vt.tiktok.com/ZSgW9UyYr/"
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7700393698940472597"
+  },
+  {
+    "id": "7700126758581947668",
+    "title": "スピカ (Spica)",
+    "artist": "Plastic Tree",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7700126758581947668"
+  },
+  {
+    "id": "7699829743356513557",
+    "title": "絲 (Ito)",
+    "artist": "the GazettE",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7699829743356513557"
+  },
+  {
+    "id": "7699700088813243669",
+    "title": "スライド. (Slide.) · Chord Guide",
+    "artist": "Plastic Tree",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7699700088813243669"
+  },
+  {
+    "id": "7698741960751746325",
+    "title": "スライド. (Slide.)",
+    "artist": "Plastic Tree",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7698741960751746325"
+  },
+  {
+    "id": "7698381823772052757",
+    "title": "空中ブランコ (Kuchuu Buranko)",
+    "artist": "Plastic Tree",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7698381823772052757"
+  },
+  {
+    "id": "7697794468400958772",
+    "title": "予感 (Yokan)",
+    "artist": "DIR EN GREY",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7697794468400958772"
+  },
+  {
+    "id": "7697248642415168789",
+    "title": "THE FINAL",
+    "artist": "DIR EN GREY",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7697248642415168789"
+  },
+  {
+    "id": "7696508315148307732",
+    "title": "blue berry",
+    "artist": "deadman",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7696508315148307732"
+  },
+  {
+    "id": "7695343196259257621",
+    "title": "UGLY",
+    "artist": "the GazettE",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7695343196259257621"
+  },
+  {
+    "id": "7695308552788839701",
+    "title": "桜と雨 (Sakura to Ame)",
+    "artist": "deadman",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7695308552788839701"
+  },
+  {
+    "id": "7695187197518957830",
+    "title": "林檎飴 (Ringo Ame)",
+    "artist": "SID",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7695187197518957830"
+  },
+  {
+    "id": "7694959851071474950",
+    "title": "紅蓮 (GUREN)",
+    "artist": "the GazettE",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7694959851071474950"
+  },
+  {
+    "id": "7694892809341390101",
+    "title": "RED",
+    "artist": "the GazettE",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7694892809341390101"
+  },
+  {
+    "id": "7702740245199981845",
+    "title": "ever",
+    "artist": "ZERA",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7702740245199981845"
+  },
+  {
+    "id": "7695588836214181121",
+    "title": "帰らぬ人 (Kaeranu Hito)",
+    "artist": "MUCC",
+    "category": "cover",
+    "url": "https://www.tiktok.com/@jun_rebirth_project/video/7695588836214181121"
   },
   {
     "id": "ai-no-hana",
     "title": "哀の花 / Ai no Hana",
-    "artist": "殉 -jun",
+    "artist": "殉-jun",
     "category": "original",
     "audio": "ai-no-hana-preview.mp3",
     "aiVocal": true

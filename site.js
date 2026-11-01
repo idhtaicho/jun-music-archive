@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   // Keep original text nodes so switching languages never translates a translation.
-  const languages = ['en', 'ja', 'es', 'pt', 'id'];
+  const languages = ['en', 'ja'];
   const rows = [
     ['Skip to music','音楽へ移動','Ir a la música','Ir para a música','Langsung ke musik'],
     ['☰ MENU','☰ メニュー','☰ MENÚ','☰ MENU','☰ MENU'],
@@ -34,11 +34,11 @@
     ['LOAD TIKTOK VIDEO ▶','TikTok動画を読み込む ▶','CARGAR VIDEO DE TIKTOK ▶','CARREGAR VÍDEO DO TIKTOK ▶','MUAT VIDEO TIKTOK ▶'],
     ['WATCH ON TIKTOK ↗','TikTokで見る ↗','VER EN TIKTOK ↗','ASSISTIR NO TIKTOK ↗','TONTON DI TIKTOK ↗'],
     ['OPEN ON TIKTOK ↗','TikTokで開く ↗','ABRIR EN TIKTOK ↗','ABRIR NO TIKTOK ↗','BUKA DI TIKTOK ↗'],
-    ['殉 -jun · ORIGINAL MUSIC','殉 -jun · オリジナル曲','殉 -jun · MÚSICA ORIGINAL','殉 -jun · MÚSICA ORIGINAL','殉 -jun · MUSIK ORISINAL'],
+    ['殉-jun · ORIGINAL MUSIC','殉-jun · オリジナル曲','殉-jun · MÚSICA ORIGINAL','殉-jun · MÚSICA ORIGINAL','殉-jun · MUSIK ORISINAL'],
     ['Which song should awaken in jun’s real voice?','どの曲を、殉本人の声で聴きたいですか？','¿Qué canción quieres escuchar con la voz de jun?','Qual música você quer ouvir na voz de jun?','Lagu mana yang ingin kamu dengar dengan suara jun?'],
     ['AI vocal demos of original songs. Listen, discover, and help shape what comes next.','オリジナル曲のAI歌唱デモ。聴いて、出会って、次の歌声を一緒に。','Escucha demos originales con voz de IA y ayuda a elegir lo que viene.','Ouça demos originais com voz de IA e ajude a escolher o que vem a seguir.','Dengarkan demo lagu orisinal dengan vokal AI dan bantu pilih karya berikutnya.'],
     ['ORIGINAL DEMO 01 · AI VOCAL DEMO','オリジナルデモ 01 · AI歌唱','DEMO ORIGINAL 01 · VOZ DE IA','DEMO ORIGINAL 01 · VOZ DE IA','DEMO ORISINAL 01 · VOKAL AI'],
-    ['Original song by 殉 -jun · 45-second preview','殉 -jun オリジナル曲 · 45秒試聴版','Canción original de 殉 -jun · Avance de 45 segundos','Música original de 殉 -jun · Prévia de 45 segundos','Lagu orisinal oleh 殉 -jun · Cuplikan 45 detik'],
+    ['Original song by 殉-jun · 45-second preview','殉-jun オリジナル曲 · 45秒試聴版','Canción original de 殉-jun · Avance de 45 segundos','Música original de 殉-jun · Prévia de 45 segundos','Lagu orisinal oleh 殉-jun · Cuplikan 45 detik'],
     ['This is an AI-sung demo, not a recording of jun’s own vocals. Only the preview is available here.','AIによる歌唱デモです。殉本人の歌唱音源ではありません。ここでは試聴版を公開しています。','Esta demo está cantada por IA, no por jun. Aquí solo está disponible un avance.','Esta demo é cantada por IA, não por jun. Aqui está disponível apenas uma prévia.','Demo ini dinyanyikan AI, bukan jun. Hanya cuplikannya yang tersedia di sini.'],
     ["VOTE FOR JUN'S REAL VOCAL VERSION",'本人歌唱してほしい曲に投票','VOTA PARA QUE JUN LA CANTE','VOTE PARA JUN CANTAR','PILIH LAGU UNTUK DINYANYIKAN JUN'],
     ['Which song would you like jun to sing?','殉に歌ってほしい曲は？','¿Qué canción quieres que cante jun?','Qual música você quer que jun cante?','Lagu apa yang ingin kamu dengar dinyanyikan jun?'],
@@ -59,6 +59,8 @@
     ['Audio could not load. Please reload and try again. / 音源を読み込めませんでした。再読み込みしてください。','音源を読み込めませんでした。再読み込みしてください。','No se pudo cargar el audio. Recarga la página.','Não foi possível carregar o áudio. Recarregue a página.','Audio tidak dapat dimuat. Muat ulang halaman.'],
     ['Your browser does not support audio playback.','このブラウザーは音声再生に対応していません。','Tu navegador no admite la reproducción de audio.','Seu navegador não suporta reprodução de áudio.','Browser ini tidak mendukung pemutaran audio.']
   ];
+  rows.push(...[["STORY","ストーリー"],["AI DEMOS","AI歌唱デモ"],["LISTEN TO JUN ↓","殉-junの歌声を聴く ↓"],["IN MY OWN VOICE","本人の歌声で"],["Original songs. A voice returning after twenty years.","オリジナル曲。約20年の時を経て、再び歌う。"],["ORIGINAL · SUNG BY 殉-jun","オリジナル曲 · 殉-jun本人歌唱"],["An original song written about twenty years ago, sung by 殉-jun.","約20年前に作ったオリジナル曲を、殉-jun本人の声で。"],["Video loads only when you press play.","再生ボタンを押したときだけTikTok動画を読み込みます。"],["After about twenty years, the music begins again.","約20年ぶりに、音楽活動を再開。"],["Songs written long ago. A voice for today.","あの頃に作った曲を、今の声で届ける。"],["DEMO NOTEBOOK","デモノート"],["Original songs in progress · AI vocal demos","制作中のオリジナル曲 · AI歌唱によるデモ"],["AI VOCAL DEMO · NOT JUN'S VOICE","AI歌唱デモ · 本人歌唱ではありません"],["Would you like to hear this song in jun’s own voice? Tell us in the TikTok comments.","この曲を本人の声で聴いてみたいですか？ TikTokのコメントで教えてください。"],["Found a song that stayed with you?","心に残った曲はありましたか？"],["Share your thoughts in the TikTok comments, and follow for the next song.","TikTokのコメントで感想を聞かせてください。次の曲も、ぜひ聴きに来てください。"],["Terms","利用規約"]]);
+  rows.push(['An original song about love and a goodbye neither heart wanted. Sung by 殉-jun.','愛し合いながら別れを迎える二人を描いたオリジナル曲。殉-jun本人歌唱。'],['KEEP LISTENING','もう一曲、聴く']);
   const dictionary = new Map(rows.map(row => [row[0], row]));
   const english = {
     '本人の声で聴きたい曲を、あなたの一票で。': 'Your vote helps choose the next song.',
@@ -66,7 +68,7 @@
     'LISTEN / 試聴する ↓': 'LISTEN ↓'
   };
   const originalNodes = new WeakMap();
-  const requested = new URL(location.href).searchParams.get('lang') || navigator.language.split('-')[0];
+  const requested = new URL(location.href).searchParams.get('lang') || 'en';
   let language = languages.includes(requested) ? requested : 'en';
   function translate(text) {
     const row = dictionary.get(text);
@@ -99,7 +101,7 @@
   picker.textContent = 'Language ';
   const select = document.createElement('select');
   select.setAttribute('aria-label','Language / 言語');
-  [['ja','日本語'],['en','English'],['es','Español'],['pt','Português'],['id','Bahasa Indonesia']].forEach(([value,label]) => {
+  [['en','English'],['ja','日本語']].forEach(([value,label]) => {
     const option = document.createElement('option'); option.value = value; option.textContent = label; select.append(option);
   });
   select.value = language; picker.append(select); document.body.prepend(picker);
@@ -120,7 +122,7 @@
   menu.querySelectorAll('a').forEach(a => a.onclick = closeMenu);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeMenu(); toggle.focus(); } });
   document.addEventListener('click', e => { if (!e.target.closest('.nav')) closeMenu(); });
-  let entries = [], category = 'all', artist = 'all';
+  let entries = [], category = 'cover', artist = 'all';
   const grid = $('video-grid'), empty = $('empty');
   function el(tag, cls, text) {
     const element = document.createElement(tag);
@@ -204,16 +206,14 @@
     $('artist-browser').hidden = true;
     localize();
   });
-  fetch('settings.json').then(r => { if (!r.ok) throw Error(); return r.json(); }).then(settings => {
-    if (externalUrl(settings.voteUrl)) {
-      $('vote-link').href = settings.voteUrl; $('vote-link').hidden = false;
-      $('vote-status').textContent = 'Voting opens in an external service. / 外部サービスの投票ページが開きます。';
-    }
-    if (externalUrl(settings.communityUrl)) {
-      $('community-link').href = settings.communityUrl; $('community-link').hidden = false;
-    }
-    localize();
-  }).catch(() => {});
+  // Voting and community services are retained separately for later use.
+  $('featured-play').onclick = () => {
+    const frame = el('iframe'); frame.title = '殉-jun — ごめんね愛しい人';
+    frame.src = 'https://www.tiktok.com/embed/v2/7699676070848630037';
+    frame.allow = 'encrypted-media; fullscreen; picture-in-picture';
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    $('featured-play').parentElement.replaceWith(frame);
+  };
   const audio = document.querySelector('audio');
   audio.addEventListener('error', () => {
     if (!$('audio-error')) {

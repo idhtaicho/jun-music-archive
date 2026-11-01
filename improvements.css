@@ -16,3 +16,7 @@
 footer a{text-decoration:underline}
 @media(max-width:650px){.nav{top:8px;right:8px}.menu-btn{min-width:122px;font-size:11px}.section h2{letter-spacing:.15em}.aw-title{letter-spacing:.06em}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Launch edition: retain the existing artwork and palette. */
+.hero{height:55vh;min-height:340px;max-height:520px}.hero-image{background-position:center 42%}.section{padding:64px 22px}.subtitle{letter-spacing:.08em;line-height:1.8}.featured-original{margin-top:24px}.featured-original iframe{display:block;width:100%;height:550px;max-height:75vh;border:0}.featured-original .short-preview{height:160px}.featured-original .watch{display:block;text-align:center;text-decoration:underline}.video-card .short-preview{height:110px}.video-card{padding:18px}.video-card h3{margin:8px 0 16px}#awakening{padding:64px 20px}.aw-title{font-size:clamp(25px,5vw,36px)}.aw-card{box-shadow:none}.aw-note{letter-spacing:.03em}.watch{display:block;text-decoration:underline}.profile{letter-spacing:.025em}.artist-choice{min-width:120px;padding:12px 16px}.aw-tag{line-height:1.8}
+@media(max-width:650px){.hero{height:auto;min-height:0;aspect-ratio:1024/878;max-height:none}.section{padding:48px 18px}.section h2{font-size:27px}.aw-card{padding:20px}.artist-choice{min-width:0}.video-grid{gap:14px}.scroll{bottom:2%}.aw-eyebrow{line-height:1.8}}

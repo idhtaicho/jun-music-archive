@@ -1,40 +1,39 @@
-# 殉 -jun | Music Archive
+# 殉-jun | Official Music Site
 
-ブルーゴシックのデザインで、Visual KeiカバーとオリジナルのAI歌唱デモを紹介する静的サイトです。
+GitHub Pagesで公開する、本人歌唱のオリジナル曲を中心とした静的サイトです。
 
-## 現在の内容
+## 初期公開版（2026-11-01）
 
-- deadman「盲目の羽根と星を手に」カバー（TikTok）
-- the GazettE「PLEDGE」カバー（TikTokリンク）
-- 「哀の花」AI歌唱デモ（約45秒のMP3）
-- カバー／オリジナル、アーティストでの絞り込み
-- スマートフォン向けレイアウト
+- 最初の曲：本人指定の「ごめんね愛しい人」（本人歌唱・TikTok）
+- 続けて聴く曲：「しゃぼんの色」（本人歌唱・TikTok）
+- カバー24投稿、9アーティストの絞り込み
+- 「哀の花」45秒AI歌唱デモ。本人歌唱と区別した独立セクション
+- 英語標準／日本語切替、Story、TikTok導線
+- TikTok動画はボタンを押したときだけ読み込み。MP3はpreload=none
 
-## 公開
+## 更新方法
 
-GitHubの Settings → Pages → Deploy from a branch → main / (root) を選択して保存します。
-index.html、privacy.html、画像・音源・CSS・JS・JSONファイルを同じリポジトリに配置してください。
-HTMLだけでは画像・試聴・曲一覧は動きません。閲覧は公開URLまたはローカルHTTPサーバーから行います。
+カバー追加は archive.json に id、title、artist、category:cover、url を追加します。
+url は https://www.tiktok.com/@ユーザー名/video/動画ID の形式を使います。
+本人歌唱の先頭曲を変える場合、index.html の紹介・リンクと site.js の featured-play の動画IDを同時に変更してください。
+本人歌唱かAI歌唱かが未確認の曲は、本人歌唱として掲載しません。
 
-## 曲の更新
+## 公開・復元
 
-archive.json の配列を編集します。カテゴリは cover または original です。
-TikTokの通常URLは埋め込み読み込みボタン、短縮URLはTikTokへのリンクとして表示します。
-曲名・アーティスト名は自動的にHTMLとして解釈しません。
+既存リポジトリ idhtaicho/jun-music-archive の main に同名ファイルを更新します。
+Pagesは main / (root) の既存設定を維持します。ビルドは不要です。
+画像・音源を含めた一式が必要です。HTML単体では動作しません。
+更新前へ戻す場合はGitHubの履歴、または手元のバックアップを使います。
 
-## 接続が必要な機能
+## 将来用に保全した機能
 
-投票サービス、専用の交流サービス、TikTok公式APIによる定期取得は未接続です。
-投票の集計やコメント保存をこの静的サイトだけで行うことはできません。
-実サービスを設定した後、settings.json の voteUrl / communityUrl にHTTPS URLを設定できます。
-接続時にはprivacy.htmlもサービスの実際のデータ取扱いに合わせて更新してください。
-APIの秘密鍵やアクセストークンをこの公開リポジトリに保存しないでください。
-
-## 公式資料
-
-- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-- https://developers.tiktok.com/docs/en/display-api-get-started
+既存の投票GASと設定は維持していますが、初期公開版では投票ページへ誘導しません。
+まずTikTokのコメントで反応を確認し、必要なら簡易投票を再接続します。
+TikTokの公式API取得・手動分類は非公開GASとシート側で稼働し、サイトのJSONへは自動反映しません。
+掲示板・会員登録・独自アクセス解析は未導入です。
+YouTube URL、TikTokプロフィールへのWebリンク可否は未確認です。
+APIキー・トークンや非公開シートのデータをこのリポジトリへ入れないでください。
 
 ## 素材
 
-元の提供ZIPのデザイン素材と試聴音源を使用しています。オープンソースライセンスや素材の再配布許諾は付与していません。
+既存のブルーゴシック素材と試聴音源を使用しています。素材の再配布許諾は付与していません。
