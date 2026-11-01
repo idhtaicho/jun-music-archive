@@ -197,7 +197,7 @@
   document.querySelectorAll('[data-filter]').forEach(b => b.onclick = () => setCategory(b.dataset.filter));
   document.querySelectorAll('[data-category-link]').forEach(a => a.onclick = () => setCategory(a.dataset.categoryLink));
   empty.textContent = 'Loading music… / 読み込み中…';
-  fetch('archive.json').then(r => { if (!r.ok) throw Error(); return r.json(); }).then(data => {
+  fetch('archive.json?v=20261101-launch').then(r => { if (!r.ok) throw Error(); return r.json(); }).then(data => {
     if (!Array.isArray(data) || !data.every(validEntry)) throw Error();
     entries = data; render();
   }).catch(() => {
@@ -223,3 +223,4 @@
   },true);
   localize();
 })();
+
